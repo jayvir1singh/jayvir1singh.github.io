@@ -64,12 +64,6 @@
 				// Video check.
 					var video = $banner.data('video');
 
-					window.setTimeout(() => {
-						if(video !== undefined) {
-
-						}
-					});
-
 					if (video)
 						$window.on('load.banner', function() {
 
