@@ -545,12 +545,14 @@
 		text-align: center;
 	}
 
+		/* 
+		TODO: FIX
 		.box > :last-child,
 		.box > :last-child > :last-child,
 		.box > :last-child > :last-child > :last-child {
 			margin-bottom: 0;
 		}
-
+		*/
 		.box .image.fit {
 			margin: 0;
 		}
@@ -1405,3 +1407,8 @@
 			}
 
 		}
+
+
+	#main > .inner > .box > div.thumbnails > .box {
+		background: #3f3f44;
+	}
