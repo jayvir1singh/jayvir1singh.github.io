@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="index.js" defer></script>
+    <title>Seattle Seahawks</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCa0cTZAdg-vckdJTWbfV1V1GqxV2eFXZo",
+            authDomain: "thecalibros-70689.firebaseapp.com",
+            databaseURL: "https://thecalibros-70689.firebaseio.com",
+            storageBucket: "thecalibros-70689.appspot.com",
+            messagingSenderId: "1067515800965"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>
+            <center>
+                <img id="logo" src="Images/logo.png">
+            </center>
+        </h1>
+        <center id="bannerPics">
+            <img src="Images/pic1.png" height="200" width="420">
+            <img src="Images/Seattle Seahawks Airplane.png" height="200" width="420">
+            <img src="Images/Seattle Seahawks Bro Bowl.png" height="200" width="420">
+        </center>
+        <br>
+        <div id="Videos">
+            <a href="https://www.youtube.com/watch?v=h6aiv5D7DVw" target="_blank">
+                <h1>This Week Highlights</h1>
+                <img id="Video_Image" src="http://img.youtube.com/vi/h6aiv5D7DVw/0.jpg">
+            </a>
+            <a href="https://www.youtube.com/watch?v=-VFEZLsd5RQ" target="_blank">
+                <h1>Last Week Highlights</h1>
+                <img id="Video_Image" src="http://img.youtube.com/vi/-VFEZLsd5RQ/0.jpg">
+            </a>
+        </div>
+        <br>
+        <center id="Players"></center>
+        <br>
+        <center><button id="LoadMorePlayers" onclick="LoadMorePlayers()">Load More Players</button></center>
+        <br>
+    </div>
+    <div id="footer">
+        <div id="last_modified"></div>
+        <div id="total_visits"></div>
+        <div id="author">TheCaliBros &copy;</div>
+    </div>
+</body>
+
+</html>

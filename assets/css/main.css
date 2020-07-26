@@ -832,6 +832,7 @@ ul.icons {
 }
 
 ul.icons li {
+	padding-top: 20px;
 	display: inline-block;
 	text-align: center;
 	padding-left: 0;

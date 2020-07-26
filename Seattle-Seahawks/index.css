@@ -1,0 +1,256 @@
+body {
+	color: white;
+	margin: 0px;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+#logo {
+	padding:5px;
+	width: 400px;
+	align-items: center;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
+#main {
+	padding-bottom: 50px;
+}
+
+#Player {
+	background: #00000057;
+	vertical-align: top;
+	width: 170px;
+	height: 160px;
+	margin: 5px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px 0px white;
+	-webkit-box-shadow: 0px 0px 25px 0px white;
+	display: inline-block;
+}
+
+#Players {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+#Player_Image {
+	width: 162px;
+	height: 116px;
+	margin: 5px;
+}
+
+#Player_Name {
+	font: 16px;
+}
+
+#Player:hover {
+	-webkit-box-shadow: 0px 0px 25px 0px green;
+	box-shadow: 0px 0px 25px 0px green;
+	border-color: green;
+}
+
+#bannerPics > img {
+	padding: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 25px 0px white;
+	box-shadow: 0px 0px 25px 0px white;
+}
+
+#Video_Image {
+	width: 480px;
+	height: 360px;
+	padding: 10px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 25px 0px white;
+	box-shadow: 0px 0px 25px 0px white;
+}
+
+#Video_Image:hover {
+	-webkit-box-shadow: 0px 0px 25px 0px green;
+	box-shadow: 0px 0px 25px 0px green;
+	border-color: green;
+}
+
+#Videos {
+	text-align: center;
+}
+
+#Videos>a,
+img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+#footer {
+	color: white;
+	background: black;
+	overflow: auto;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*
+#author {
+	position: absolute;
+	right: 20px;
+	float: left;
+	text-align: right;
+	width: 33.33333%;
+}
+
+#last_modified {
+	float: left;
+	text-align: left;
+	width: 33.33333%;
+}
+
+#total_visits {
+	float: left;
+	text-align: center;
+	width: 33.33333%;
+}
+*/
+@media screen and (max-width: 600px) {
+	#Video_Image {
+		width: auto;
+		height: 300px;
+	}
+
+	/*
+	#footer {
+		font-size: 10px;
+	}
+	*/
+	#footer {
+		flex-direction:column;
+		justify-content:center;
+	}
+	#footer > div {
+		padding:5px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#footer {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 455px) {
+	#Video_Image {
+		width: auto;
+		height: 250px;
+	}
+
+	#bannerPics>img {
+		width: 350px;
+		height: auto;
+	}
+	#logo {
+		padding:5px;
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	#bannerPics>img {
+		margin-top: 5px;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	#Video_Image {
+		width: auto;
+		height: 170px;
+	}
+
+	#bannerPics>img {
+		width: 250px;
+		height: auto;
+	}
+}
+
+
+button {
+	border-style: none;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3c4;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+button:hover {
+	border-style: none;
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+button:focus {
+	outline:none;
+}
+
+button[disabled=disabled], button:disabled {
+    background:#949494b0;
+}
+
+button:active {
+	border-style: none;
+	position:relative;
+	top:1px;
+}
