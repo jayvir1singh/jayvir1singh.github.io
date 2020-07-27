@@ -268,7 +268,9 @@ textarea {
 	textarea {
 		font-size: 12pt;
 	}
-
+	.progressBar {
+		width:70% !important;
+	}
 }
 
 @media screen and (max-width: 736px) {
@@ -279,7 +281,9 @@ textarea {
 	textarea {
 		font-size: 12pt;
 	}
-
+	.progressBar {
+		width:50% !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -1582,7 +1586,41 @@ body.is-loading #banner:before {
 
 }
 
-
 #main>.inner>.box>div.thumbnails>.box {
 	background: #3f3f44;
+}
+
+.progressBar {
+	width:70%;
+	border:1px solid #ccc;
+	display: inline-block;
+	text-align:left;
+	background:#acb9e6;
+	margin-top:5px;
+}
+
+.progressSize {
+	padding-top:2px;
+	padding-left:5px;
+	background: #7f92cf;
+	display: inline-block;
+	text-align:left;
+	
+}
+
+.progressLabel {
+	width: 100px;
+	margin-top:5px;
+	border:1px solid #ccc;
+	background: #70c7be;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+.progressWrapper {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
