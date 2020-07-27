@@ -1593,6 +1593,7 @@ body.is-loading #banner:before {
 .progressBar {
 	width:70%;
 	border:1px solid #ccc;
+	border-left:none;
 	display: inline-block;
 	text-align:left;
 	background:#acb9e6;
