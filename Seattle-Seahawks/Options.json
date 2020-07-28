@@ -1,7 +1,7 @@
 {
   "Version":"2.0",
   "LastModified":"Saturday, July 25, 2020",
-  "Background":"url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-025.jpg')",
+  "Background":"url('Images/background.jpg')",
   "Columns":"6",
   "Pages":["Page1.json","Page2.json"]
 }
